@@ -1,3 +1,4 @@
+//MODIFICACIONES!! intento de mouse over en el menu principal para mejor feedback entre el jugador y las interacciones
 //Tore Jeremias 91406/1 comision 2
 //link del video explicativo: https://youtu.be/26lGXxkaBoQ
 //variables globales--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -21,6 +22,7 @@ int enemyspawner = 1;
 float balax;
 float balay = 720;
 boolean balaup;
+ boolean adentro;
 void setup() {
   size(800, 800);
   textAlign(CENTER, CENTER);
@@ -41,7 +43,6 @@ void setup() {
   damage = 0;
 }
 void draw() {
-
   background(0);
   if (estado.equals("startup")) {
     image(menu, 0, 0);
@@ -49,8 +50,11 @@ void draw() {
     //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   } else if (estado.equals("mainmenu")) {
     image(menu, 0, 0);
+    mouseover(width/2+170, height/2, 200, 60);
     rect(width/2+170, height/2, 200, 60);
+    mouseover(width/2+190, height/2+100, 190, 60);
     rect(width/2+190, height/2+100, 190, 60);
+    mouseover(width/2+190, height/2+200, 190, 60);
     rect(width/2+190, height/2+200, 190, 60);
     fill(255, 55, 55);
     text("JUGAR", width/2+170+100, height/2+25);
