@@ -1,5 +1,5 @@
 //Tore Jeremias 91406/1
-//YOUTUBE:
+//YOUTUBE: https://youtu.be/PbjGtqqV3hE
 //RECURSOS DE ITCH.IO: Gothicvania pack, Generic Character de brullov.
 //MUSICA: Castlevania Rondo of Blood ost (juegazo:P)
 Core core;
