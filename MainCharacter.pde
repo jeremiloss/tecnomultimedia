@@ -1,4 +1,4 @@
-class Player {
+ class Player {
   PImage[] idle = new PImage[6];
   PImage[] atk= new PImage[5];
   PImage[] hit = new PImage[4];

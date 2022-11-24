@@ -2,12 +2,12 @@
 class Core {
 
      String estado;
- 
+  Ui        ui;
   BackGround bg;
   Player p1;
   Enemy [] e1 = new Enemy[30];
   Core(){
-  
+    ui = new Ui();
     bg = new BackGround();
     p1 = new Player(160,460);
     for(int m = 0; m < e1.length; m++){
@@ -37,6 +37,12 @@ class Core {
       core.script();
        bg.gamebg();
        p1.display();
+       ui.display(122,528);
+       pushStyle();
+       textSize(25);
+       textMode(CENTER);
+       text(p1.killcount, 172,560);
+       popStyle();
        for(int m = 0; m < e1.length; m++){
              e1[m].display();
 
